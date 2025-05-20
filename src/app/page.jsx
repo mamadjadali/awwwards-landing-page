@@ -1,15 +1,14 @@
 'use client';
-import "./globals.css";
-import styles from './page.module.scss'
-import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
-import Preloader from '../components/Preloader';
+import { useEffect, useState } from 'react';
+import Bento from "../components/BentoGrid";
 import Landing from '../components/Landing';
-import Projects from '../components/Projects';
-import Description from '../components/Description';
+import LogoCloud from "../components/LogoCloud";
+import Preloader from '../components/Preloader';
 import SlidingImages from '../components/SlidingImages';
-import Contact from '../components/Contact';
-import TestComponent from "@/components/TestComponent";
+import Stats from "../components/Stats";
+import "./globals.css";
+import styles from './page.module.scss';
 
 export default function Home() {
 
@@ -36,12 +35,13 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Landing />
-      <TestComponent/>
-      <p className="text-2xl">hello</p>
-      {/* <Description />
-      <Projects /> */}
+      <Bento/>
+      
       <SlidingImages />
-      {/* <Contact /> */}
+      <Stats/>
+      <LogoCloud/>
+      
+      
     </main>
   )
 }
