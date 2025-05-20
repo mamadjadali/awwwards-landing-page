@@ -64,14 +64,14 @@ export default function index() {
                 </Magnetic>
             </div>
         </div>
-        <div ref={button} className={styles.headerButtonContainer}>
+        {/* <div ref={button} className={styles.headerButtonContainer}>
             <Rounded onClick={() => {setIsActive(!isActive)}} className={`${styles.button}`}>
                 <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
             </Rounded>
         </div>
         <AnimatePresence mode="wait">
             {isActive && <Nav />}
-        </AnimatePresence>
+        </AnimatePresence> */}
         </>
     )
 }

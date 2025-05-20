@@ -34,10 +34,10 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Landing />
-      <Description />
-      <Projects />
+      {/* <Description />
+      <Projects /> */}
       <SlidingImages />
-      <Contact />
+      {/* <Contact /> */}
     </main>
   )
 }
