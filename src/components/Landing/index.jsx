@@ -54,6 +54,7 @@ export default function Home() {
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Love The Skin You are in -</p>
           <p ref={secondText}>Dr.Maryam Ranjbar -</p>
+          <p className='text-black'>test</p>
         </div>
       </div>
       <div data-scroll data-scroll-speed={0.1} className={styles.description}>

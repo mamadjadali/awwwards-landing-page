@@ -1,4 +1,5 @@
 'use client';
+import "./globals.css";
 import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
@@ -8,6 +9,7 @@ import Projects from '../components/Projects';
 import Description from '../components/Description';
 import SlidingImages from '../components/SlidingImages';
 import Contact from '../components/Contact';
+import TestComponent from "@/components/TestComponent";
 
 export default function Home() {
 
@@ -34,6 +36,8 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Landing />
+      <TestComponent/>
+      <p className="text-2xl">hello</p>
       {/* <Description />
       <Projects /> */}
       <SlidingImages />
